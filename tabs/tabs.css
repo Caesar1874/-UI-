@@ -47,3 +47,13 @@
         background-color: #fff;
         border-color: #ddd #ddd transparent;
     }
+
+    .tab-content {
+        /*无样式*/
+    }
+    .tab-content > .tab-pane {
+        display: none;
+    }
+    .tab-content > .active {
+        display: block;
+    }
