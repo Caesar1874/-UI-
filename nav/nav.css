@@ -1,0 +1,30 @@
+/*nav*/
+    /*ul在浏览器中会有margin和padding, normalize中同一设置为margin-bottom: 1rem;*/
+    /*此处取消了margin-botton和padding-left*/
+    .nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .nav-item {
+        /*本身无样式，与.nav-inline结合后才有样式，否则只是display: list-item;*/
+        /*即垂直导航使用ul>li>a的标记，水平导航添加nav-inline即可*/
+    }
+
+    .nav-link {
+        display: inline-block;
+    }
+
+    .nav-inline {
+        /*本身无样式*/
+    }
+
+    /* nav-inline 对 nav-item 和 nav-link 的影响*/
+    .nav-inline .nav-item {
+        display: inline-block;
+    }
+    .nav-inline .nav-item + .nav-item,
+    .nav-inline .nav-link + .nav-link {
+        margin-left: 1rem;
+    }
